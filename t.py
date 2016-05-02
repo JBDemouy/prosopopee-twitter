@@ -10,7 +10,7 @@ def get_all_tweets_needed(t, screen_name, tweet_id):
 
     while count != 10:
         if len(tweets) < count * 200:
-            print "I got all the tweets needed \o/"
+            # print "I got all the tweets needed \o/"
             break
 
         count += 1
@@ -38,7 +38,7 @@ def get_all_replies(original_tweet, tweets):
                 print "Start from: @%s: %s" % (tweet.user.screen_name, tweet.text)
 
         if len(next_replied_to) == 0:
-            print "could not found any other tweets in the reply tree"
+            # print "could not found any other tweets in the reply tree"
             break
 
         replied_to = next_replied_to
