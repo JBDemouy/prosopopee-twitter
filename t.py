@@ -19,6 +19,7 @@ def get_all_tweets_needed(t, screen_name, tweet_id):
 
     else:
         print "Tried to grab 2000 tweets and couldn't find original tweet, abort."
+        sys.exit(1)
 
     return tweets
 
